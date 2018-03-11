@@ -37,11 +37,13 @@
       text-decoration: none;
       padding-left: 9rem;
       transition: all .3s;
+      outline: none;
       &:last-child {
          padding-right: 2rem;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
          transform: translateY(-2px) scale(1.05);
          transform-origin: bottom;
          text-shadow: .5rem 1rem 2rem rgba(black, .3)
@@ -86,10 +88,12 @@
       font-size: 2rem;
       font-weight: 700;
       text-decoration: none;
+      outline: none;
       padding-left: 9rem;
       transition: all .3s;
 
-      &:hover {
+      &:hover,
+      &:focus {
          transform: translateY(-2px) scale(1.05);
          transform-origin: bottom;
          text-shadow: .5rem 1rem 2rem rgba(black, .3)
