@@ -276,7 +276,7 @@ body {
     font-size: 1.6rem;
     content: "";
     display: inline-block;
-    background-image: linear-gradient(to right, #642B73, #C6426E);
+    background-image: linear-gradient(to right, rgba(100, 43, 115, 0.8), rgba(198, 66, 110, 0.8));
     -webkit-background-clip: text;
     color: transparent;
     padding-bottom: 3rem; }

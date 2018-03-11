@@ -56,3 +56,11 @@ $breakpoint choices:
     -webkit-background-clip: text;
     color: transparent;
 }
+
+@mixin main-text-gradient-p {
+    content: "";
+    display: inline-block;
+    background-image: linear-gradient(to right, rgba($color-primary-text-light, .8), rgba($color-primary-text-dark, .8));
+    -webkit-background-clip: text;
+    color: transparent;
+}
