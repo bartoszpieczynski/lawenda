@@ -39,7 +39,12 @@ body {
       padding: 0; } }
 
 .container {
+  background-color: #e4e4e4c2;
   margin: 0 auto;
+  margin-top: 2.5rem;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   width: 95%;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
 
@@ -113,14 +118,16 @@ body {
         letter-spacing: .5rem; } }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
-  transition: all .2s; }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  transition: all .2s;
+  background-image: linear-gradient(to right, rgba(115, 75, 109, 0.7), rgba(66, 39, 90, 0.7));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -132,22 +139,26 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(115, 75, 109, 0.8), rgba(66, 39, 90, 0.8)), url(../img/a-fox-101136-unsplash-min.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  background-blend-mode: screen; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem !important; }
+
+.u-margin-top {
+  margin-top: 4rem !important; }
 
 .navbar {
   background-color: white;
@@ -162,7 +173,9 @@ body {
   align-items: center;
   overflow: hidden;
   margin-bottom: 3rem;
-  position: absolute; }
+  position: absolute;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
   .navbar__sticky {
     position: fixed;
     top: 0;
@@ -195,6 +208,7 @@ body {
   background-color: white;
   position: fixed;
   display: flex;
+  top: 0;
   opacity: 0;
   width: 0;
   z-index: 1000000;
@@ -233,7 +247,54 @@ body {
       transform-origin: bottom;
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
 
+.about {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: row; }
+  .about__desc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 33.33333%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    border-radius: 5px; }
+  .about__icon {
+    flex: 1;
+    text-align: center;
+    font-size: 8rem;
+    color: rgba(100, 43, 115, 0.8); }
+  .about__text {
+    flex: 1;
+    font-size: 1.6rem;
+    content: "";
+    display: inline-block;
+    background-image: linear-gradient(to right, #642B73, #C6426E);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 3rem; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(115, 75, 109, 0.8), rgba(66, 39, 90, 0.8)), url(../img/a-fox-101136-unsplash-min.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  background-blend-mode: screen; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
 .section-about {
-  background-color: #e4e4e4c2;
-  margin-top: -20rem;
   height: 100vh; }

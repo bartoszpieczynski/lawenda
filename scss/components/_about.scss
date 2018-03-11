@@ -1,0 +1,38 @@
+.about {
+   display: flex;
+   width: 80%;
+   margin: 0 auto;
+   align-items: stretch;
+   justify-content: space-around;
+   flex-direction: row;
+
+
+   &__desc {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex: 0 0 33.33333%;
+      background-color: rgba(white, .2);
+      margin-left: 2rem;
+      box-shadow: 0 1rem 3rem rgba(black, .2);
+      border-radius: 5px;
+   }
+
+   &__icon{
+      flex: 1;
+      text-align: center;
+      font-size: 8rem;
+      color: rgba($color-primary-text-light, 0.8);
+   }
+
+   &__text {
+      flex: 1;
+      font-size: 1.6rem;
+      @include main-text-gradient;
+      padding-bottom: 3rem;
+   }
+
+}

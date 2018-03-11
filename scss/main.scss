@@ -7,9 +7,10 @@
 @import "base/_typography.scss";
 @import "base/_utilities.scss";
 
+@import "components/_navbar.scss";
+@import "components/_about.scss";
 
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
-@import "layout/_navigation.scss";
 
 @import "pages/_home.scss";
