@@ -81,3 +81,16 @@ body {
        margin-bottom: 3rem;
    }
 }
+
+.heading-loader {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all .2s;
+    background-image: linear-gradient(to right, rgba(#D3CCE3, 0.7), rgba(#E9E4F0, 0.7));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
