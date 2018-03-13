@@ -1,0 +1,33 @@
+.gallery {
+   width: 80%;
+   height: 80%;
+   position: relative;
+   top: 10%;
+   margin: 0 auto;
+   background-color: rgba(white, .2);
+
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0 .4rem;
+   }
+
+   &__column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 .4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__img {
+      margin-top: .8rem;
+      vertical-align: middle;
+      flex: 0 0 25%;
+   }
+
+}

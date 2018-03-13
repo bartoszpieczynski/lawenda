@@ -2,7 +2,6 @@ $( document ).ready(function(){
 var falling = true;
 
 TweenLite.set("#loader",{perspective:600})
-TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
 
 var total = 30;
 var loader = document.getElementById("loader"),	w = window.innerWidth , h = window.innerHeight;
