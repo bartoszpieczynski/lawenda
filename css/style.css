@@ -641,23 +641,23 @@ body {
       .products__card__side--front {
         background-size: cover; }
         .products__card__side--front--1 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/annie-spratt-210740-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/annie-spratt-210740-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/annie-spratt-210740-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/annie-spratt-210740-unsplash-min.jpg); }
         .products__card__side--front--2 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/gabriel-jimenez-241711-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/gabriel-jimenez-241711-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/gabriel-jimenez-241711-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/gabriel-jimenez-241711-unsplash-min.jpg); }
         .products__card__side--front--3 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/tim-mossholder-2138-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/tim-mossholder-2138-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/tim-mossholder-2138-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/tim-mossholder-2138-unsplash-min.jpg); }
         .products__card__side--front--4 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash-min.jpg); }
         .products__card__side--front--5 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/neslihan-gunaydin-3493-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/neslihan-gunaydin-3493-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/neslihan-gunaydin-3493-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/neslihan-gunaydin-3493-unsplash-min.jpg); }
         .products__card__side--front--6 {
-          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash.jpg);
-          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash.jpg); }
+          background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash-min.jpg);
+          background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/christian-joudrey-90289-unsplash-min.jpg); }
         .products__card__side--front--7 {
           background-image: -webkit-linear-gradient(left, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/ozdoba.jpg);
           background-image: linear-gradient(to right, rgba(66, 39, 90, 0.7), rgba(115, 75, 109, 0.7)), url(../img/ozdoba.jpg); }
@@ -666,17 +666,17 @@ body {
                 transform: rotateY(180deg);
         background-size: cover; }
         .products__card__side--back--1 {
-          background-image: url(../img/annie-spratt-210740-unsplash.jpg); }
+          background-image: url(../img/annie-spratt-210740-unsplash-min.jpg); }
         .products__card__side--back--2 {
-          background-image: url(../img/gabriel-jimenez-241711-unsplash.jpg); }
+          background-image: url(../img/gabriel-jimenez-241711-unsplash-min.jpg); }
         .products__card__side--back--3 {
-          background-image: url(../img/tim-mossholder-2138-unsplash.jpg); }
+          background-image: url(../img/tim-mossholder-2138-unsplash-min.jpg); }
         .products__card__side--back--4 {
-          background-image: url(../img/christian-joudrey-90289-unsplash.jpg); }
+          background-image: url(../img/christian-joudrey-90289-unsplash-min.jpg); }
         .products__card__side--back--5 {
-          background-image: url(../img/neslihan-gunaydin-3493-unsplash.jpg); }
+          background-image: url(../img/neslihan-gunaydin-3493-unsplash-min.jpg); }
         .products__card__side--back--6 {
-          background-image: url(../img/christian-joudrey-90289-unsplash.jpg); }
+          background-image: url(../img/christian-joudrey-90289-unsplash-min.jpg); }
         .products__card__side--back--7 {
           background-image: url(../img/ozdoba.jpg); }
     .products__card:hover .products__card__side--front {
