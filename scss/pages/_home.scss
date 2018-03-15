@@ -2,9 +2,9 @@
    padding-bottom: 15rem;
 }
 
-.section-gallery {
+.section-products {
    position: relative;
-   height: 95vh;
+   height: auto;
    background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -16,7 +16,7 @@
    background-blend-mode: screen; 
 }
 
-.section-products {
+.section-gallery {
    height: 60vh;
 }
 

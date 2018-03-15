@@ -5,32 +5,38 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <link rel="icon" href="img/logo/logo-tab.png">
+
    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto+Slab|Ubuntu" rel="stylesheet">
    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-   
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
    <script src="js/loading.js"></script>
    <script src="js/smoothScrolling.js"></script>
    <script src="js/navbar.js"></script>
    <script src="js/petals.js" integrity=""></script>
-   
+
 
    <title>Centrum ogrodnicze Lawenda</title>
 </head>
 <nav id="navbar-fixed" class="navbar-fixed">
    <div class="navbar-fixed__container">
-      <img src="img/logo.png" alt="Logo" class="navbar__logo">
+      <img src="img/logo/logo-nav.png" alt="Logo" class="navbar__logo">
       <a href="#section-about" class="navbar-fixed__option">O nas</a>
       <a href="#section-gallery" class="navbar-fixed__option">Galeria</a>
       <a href="#section-products" class="navbar-fixed__option">Oferta</a>
       <a href="#section-contact" class="navbar-fixed__option">Kontakt</a>
    </div>
 </nav>
+
 <body>
 
    <div id="loader" class="loader-wrapper">
@@ -38,13 +44,13 @@
          <h2 class="heading-loader">Loading</h2>
       </div>
    </div>
-   
+
 
    <div class="container">
 
       <nav id="navbar" class="navbar">
          <div class="navbar__container">
-            <img src="img/logo.png" alt="Logo" class="navbar__logo">
+            <img src="img/logo/logo-nav.png" alt="Logo" class="navbar__logo">
             <a href="#section-about" class="navbar__option">O nas</a>
             <a href="#section-gallery" class="navbar__option">Galeria</a>
             <a href="#section-products" class="navbar__option">Oferta</a>
@@ -71,61 +77,157 @@
                      <i class="ion-ios-home"></i>
                   </div>
                   <p class="about__text">
-                     Siedziba prowadzonego przez Andrzeja Obrzuda centrum ogrodniczego Lawenda mieści się w Szczecinie. Początek naszej działalności sięga 1993 roku.
+                     Siedziba prowadzonego przez Andrzeja Obrzuda centrum ogrodniczego Lawenda mieści się w Szczecinie. Początek naszej działalności
+                     sięga 1993 roku.
                   </p>
                </div>
                <div class="about__desc">
-                     <div class="about__icon">
-                        <i class="ion-ios-cart"></i>
-                     </div>
-                     <p class="about__text">
-                        Swoim klientom oferujemy duży wybór niepowtarzalnych i wyjątkowych akcesoriów ogrodowych oraz bogatą ofertę ozdób różnego rodzaju.
-                     </p>
+                  <div class="about__icon">
+                     <i class="ion-ios-cart"></i>
+                  </div>
+                  <p class="about__text">
+                     Swoim klientom oferujemy duży wybór niepowtarzalnych i wyjątkowych akcesoriów ogrodowych oraz bogatą ofertę ozdób różnego
+                     rodzaju.
+                  </p>
                </div>
                <div class="about__desc">
-                     <div class="about__icon">
-                        <i class="ion-ios-people"></i>
-                     </div>
-                     <p class="about__text">
-                        Tajemnicą naszego sukcesu jest zatrudniana kadra pracownicza. 
-                        Są to ludzie, dla których ogród jest nie tylko pracą, ale i hobby, a może nawet pasją.                        
-                     </p>
+                  <div class="about__icon">
+                     <i class="ion-ios-people"></i>
+                  </div>
+                  <p class="about__text">
+                     Tajemnicą naszego sukcesu jest zatrudniana kadra pracownicza. Są to ludzie, dla których ogród jest nie tylko pracą, ale i
+                     hobby, a może nawet pasją.
+                  </p>
                </div>
-            </div>           
-         </section>
-         <section id="section-gallery" class="section-gallery">
-            <!-- <div class="gallery">
-               <div class="gallery__row">
-                  <div class="gallery__column">
-                     <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                     <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                  </div>
-                  <div class="gallery__column">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                  </div>
-                  <div class="gallery__column">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                  </div>
-                  <div class="gallery__column">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                  </div>
-               </div>
-            </div> -->
+            </div>
          </section>
 
          <section id="section-products" class="section-products">
+            <div class="products">
+               <div class="products__text--up">
+                  Ogród to wyjątkowa część każdego domu. Jest coś wyjątkowego w możliwości zrelaksowania się w otoczeniu zieleni, kolorowych
+                  i pachnących kwiatów i w cieniu drzew. Zdarza się jednak, że ze względu na brak czasu, pomysłu lub odpowiednich
+                  umiejętności nie jesteśmy w stanie bez pomocy profesjonalisty urządzić swojego „małego raju na ziemi”.
+                  Wtedy niestety potencjał miejsca marnuje się. Nie chcemy dopuścić do tego typu sytuacji. Z naszej strony
+                  dołożymy wszelkich starań, by pomóc naszym klientom w zagospodarowaniu terenów zielonych.
 
+               </div>
+
+               <div class="products__card-box">
+                  <span class="products__card-title">Oferta naszej firmy składa się między innymi z:</span>
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--1">
+                        <span class="products__card--text">kwiatów, bylin </br> i krzewów</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--1">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--2">
+                        <span class="products__card--text">ziemi </br> i podłoża w małych </br> i dużych opakowaniach</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--2">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--3">
+                        <span class="products__card--text">drzewek ozdobnych </br>i owocowych</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--3">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--4">
+                        <span class="products__card--text">nasion traw, kwiatów, warzyw </br>i kiełków</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--4">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--5">
+                        <span class="products__card--text">narzędzi ogrodniczych</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--5">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--6">
+                        <span class="products__card--text">automatycznych systemów nawadniania</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--6">
+
+                     </div>
+                  </div>
+
+
+                  <div class="products__card">
+                     <div class="products__card products__card__side products__card__side--front products__card__side--front--7">
+                        <span class="products__card--text">ozdób</span>
+                     </div>
+                     <div class="products__card products__card__side products__card__side--back products__card__side--back--7">
+                     </div>
+                  </div>
+
+
+               </div>
+
+               <div class="products__text--down">
+                  Specjalizujemy się w sprzedaży wysokiej jakości artykułów do ogrodu oraz sprzętu, między innymi mebli. Proponujemy także
+                  zakup cebulek roślin oraz gotowych roślin doniczkowych i krzewów ozdobnych. Zatrudniamy personel składający
+                  się z pracowników z wieloletnim doświadczeniem w branży, którzy dodatkowo podejmą się opieki nad grobami.
+                  Sprawią, że miejsce pochówku będzie odzwierciedleniem szacunku dla zmarłej osoby. Zajmujemy się także projektowaniem
+                  i zakładaniem ogrodów. Dodatkowo świadczymy usługi brukarskie, w celu stworzenia dekoracyjnych elementów
+                  na terenach zielonych.
+               </div>
+            </div>
+
+         </section>
+
+         <section id="section-gallery" class="section-gallery">
+            <!-- <div class="gallery">
+                  <div class="gallery__row">
+                     <div class="gallery__column">
+                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                        <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
+                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                     </div>
+                     <div class="gallery__column">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                     </div>
+                     <div class="gallery__column">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                     </div>
+                     <div class="gallery__column">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
+                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
+                     </div>
+                  </div>
+               </div> -->
          </section>
 
          <section id="section-contact" class="section-contact">

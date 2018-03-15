@@ -1,0 +1,156 @@
+.products {
+   width: 80%;
+   margin: 0 auto;
+   height: 95%;
+   padding-top: 15rem;
+   padding-bottom: 35rem;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+  
+
+   &__text--up {
+      flex: 0 0 20%;
+      color: white;
+      font-size: 1.4rem;
+      text-shadow: 2px 1px black;
+      padding-top: 10rem;
+   }
+
+   &__text--down {
+      padding-top: 10rem;
+      flex: 0 0 20%;
+      color: white;
+      font-size: 1.4rem;
+      text-shadow: 2px 1px black;   
+   }
+
+   &__card-box {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: 308px;
+      :nth-child(even) {
+         margin-right: 1rem;
+      }
+   }
+
+   &__card {
+      position: relative;
+      height: 12rem;
+      flex: 0 0 35%;
+      margin-bottom: 2rem;
+      transition: all .3s;
+      text-align: center;
+      cursor: pointer; 
+
+
+      &__side {
+         position: absolute;
+         backface-visibility: hidden;
+         border-radius: 5px;
+         overflow: hidden; 
+         top: 0;
+         left: 0;
+         width: 100%;
+         box-shadow: 0 1.5rem 4rem rgba(black, 0.5); 
+         transition: all 1.2s;   
+         
+               
+         
+         &--front {
+            background-size: cover;
+            &--1 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/annie-spratt-210740-unsplash.jpg);
+            }
+            &--2 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/gabriel-jimenez-241711-unsplash.jpg);
+            }
+            &--3 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/tim-mossholder-2138-unsplash.jpg);
+            }
+            &--4 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/christian-joudrey-90289-unsplash.jpg);
+            }
+            &--5 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/neslihan-gunaydin-3493-unsplash.jpg);
+            }
+            &--6 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/christian-joudrey-90289-unsplash.jpg);
+            }
+            &--7 {
+               background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
+                url(../img/ozdoba.jpg);
+            }
+         }
+   
+         &--back {
+            transform: rotateY(180deg);
+            background-size: cover;
+            
+            &--1 {
+               background-image: url(../img/annie-spratt-210740-unsplash.jpg);
+            }
+            &--2 {
+               background-image: url(../img/gabriel-jimenez-241711-unsplash.jpg);
+            }
+            &--3 {
+               background-image: url(../img/tim-mossholder-2138-unsplash.jpg);
+            }
+            &--4 {
+               background-image: url(../img/christian-joudrey-90289-unsplash.jpg);
+            }
+            &--5 {
+               background-image: url(../img/neslihan-gunaydin-3493-unsplash.jpg);
+            }
+            &--6 {
+               background-image: url(../img/christian-joudrey-90289-unsplash.jpg);
+            }
+            &--7 {
+               background-image: url(../img/ozdoba.jpg);
+            }
+         }
+      }
+
+      &:hover &__side--front {
+         transform: rotateY(-180deg);
+      }
+
+      &:hover &__side {
+         box-shadow: 0 1.5rem 4rem rgba($color-primary-light, 0.5); 
+      }
+
+      &:hover &__side--back {
+         transform: rotateY(0) scale(1.2);       
+      }
+
+
+
+      &--text{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-weight: 700;
+         color: white;
+         text-shadow: 2px 1px black;
+      }
+
+   }
+   &__card-title {
+      color: white;
+      font-size: 1.4rem;
+      flex: 90%;
+      text-align: center;
+      padding-bottom: 1.5rem;
+      text-shadow: 2px 1px black;  
+   }
+}

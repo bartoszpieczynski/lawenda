@@ -52,7 +52,7 @@ $breakpoint choices:
 @mixin main-text-gradient {
     content: "";
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-text-light, $color-primary-text-dark);
+    background-image: linear-gradient(to right, #482e74, #9679c0);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -60,7 +60,7 @@ $breakpoint choices:
 @mixin main-text-gradient-p {
     content: "";
     display: inline-block;
-    background-image: linear-gradient(to right, rgba($color-primary-text-light, .8), rgba($color-primary-text-dark, .8));
+    background-image: linear-gradient(to right, $color-primary-text-dark, $color-primary-text-light);
     -webkit-background-clip: text;
     color: transparent;
 }

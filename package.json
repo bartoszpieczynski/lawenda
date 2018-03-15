@@ -4,6 +4,7 @@
   "description": "Centrum Ogrodnicze Lawenda",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.2.0",
     "node-sass": "^4.7.2"
   },
   "devDependencies": {},
