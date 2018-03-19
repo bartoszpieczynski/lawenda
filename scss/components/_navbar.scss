@@ -73,6 +73,7 @@
    overflow: hidden;
    margin-bottom: 3rem;
    transition: opacity .5s;
+   backface-visibility: hidden;
 
    &__sticky {
       position: fixed;

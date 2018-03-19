@@ -22,6 +22,7 @@
    <script src="js/loading.js"></script>
    <script src="js/smoothScrolling.js"></script>
    <script src="js/navbar.js"></script>
+   <script src="js/galleryFade.js"></script>
    <script src="js/petals.js" integrity=""></script>
 
 
@@ -39,7 +40,7 @@
 
 <body>
 
-   <div id="loader" class="loader-wrapper">
+<div id="loader" class="loader-wrapper">
       <div class="loader-text">
          <h2 class="heading-loader">Loading</h2>
       </div>
@@ -200,34 +201,23 @@
          </section>
 
          <section id="section-gallery" class="section-gallery">
-            <!-- <div class="gallery">
-                  <div class="gallery__row">
-                     <div class="gallery__column">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                        <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     </div>
-                     <div class="gallery__column">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     </div>
-                     <div class="gallery__column">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     </div>
-                     <div class="gallery__column">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-2.jpg" alt="Gallery IMG" class="gallery__img">
-                           <img src="img/gallery/gallery-1.jpg" alt="Gallery IMG" class="gallery__img">
-                     </div>
-                  </div>
-               </div> -->
+            <div class="gallery">
+               <div class="gallery__left-side">
+                     <img class="fade-img gallery__left-side__img" id="gal-img-1" src="img/ozdoba.jpg" alt="Main">
+                     <img class="fade-img gallery__left-side__img" id="gal-img-2" src="img/gallery/gallery-1.jpg" alt="Main">
+                     <img class="fade-img gallery__left-side__img" id="gal-img-3" src="img/gallery/gallery-2.jpg" alt="Main">
+                     <img class="fade-img gallery__left-side__img" id="gal-img-4" src="img/gallery/gallery-1.jpg" alt="Main">                  
+               </div>
+               <div class="gallery__main">
+                  <img class="gallery__main__img" id="big-img" src="img/ozdoba.jpg" alt="Main">
+               </div>
+               <div class="gallery__right-side">
+                     <img class="fade-img gallery__right-side__img" id="gal-img-5" src="img/neslihan-gunaydin-3493-unsplash-min.jpg" alt="Main">
+                     <img class="fade-img gallery__right-side__img" id="gal-img-6" src="img/gallery/gallery-2.jpg" alt="Main">
+                     <img class="fade-img gallery__right-side__img" id="gal-img-7" src="img/ozdoba.jpg" alt="Main">
+                     <img class="fade-img gallery__right-side__img" id="gal-img-8" src="img/gallery/gallery-1.jpg" alt="Main">
+               </div>
+            </div>
          </section>
 
          <section id="section-contact" class="section-contact">

@@ -3,7 +3,7 @@
    margin: 0 auto;
    height: 95%;
    padding-top: 15rem;
-   padding-bottom: 35rem;
+   padding-bottom: 20rem;
    position: relative;
    display: flex;
    justify-content: space-around;
@@ -64,27 +64,27 @@
             background-size: cover;
             &--1 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/annie-spratt-210740-unsplash.jpg);
+                url(../img/annie-spratt-210740-unsplash-min.jpg);
             }
             &--2 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/gabriel-jimenez-241711-unsplash.jpg);
+                url(../img/gabriel-jimenez-241711-unsplash-min.jpg);
             }
             &--3 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/tim-mossholder-2138-unsplash.jpg);
+                url(../img/tim-mossholder-2138-unsplash-min.jpg);
             }
             &--4 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/christian-joudrey-90289-unsplash.jpg);
+                url(../img/christian-joudrey-90289-unsplash-min.jpg);
             }
             &--5 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/neslihan-gunaydin-3493-unsplash.jpg);
+                url(../img/neslihan-gunaydin-3493-unsplash-min.jpg);
             }
             &--6 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
-                url(../img/christian-joudrey-90289-unsplash.jpg);
+                url(../img/christian-joudrey-90289-unsplash-min.jpg);
             }
             &--7 {
                background-image: linear-gradient(to right, rgba($color-primary-dark, 0.7), rgba($color-primary-light, 0.7)),
@@ -97,22 +97,22 @@
             background-size: cover;
             
             &--1 {
-               background-image: url(../img/annie-spratt-210740-unsplash.jpg);
+               background-image: url(../img/annie-spratt-210740-unsplash-min.jpg);
             }
             &--2 {
-               background-image: url(../img/gabriel-jimenez-241711-unsplash.jpg);
+               background-image: url(../img/gabriel-jimenez-241711-unsplash-min.jpg);
             }
             &--3 {
-               background-image: url(../img/tim-mossholder-2138-unsplash.jpg);
+               background-image: url(../img/tim-mossholder-2138-unsplash-min.jpg);
             }
             &--4 {
-               background-image: url(../img/christian-joudrey-90289-unsplash.jpg);
+               background-image: url(../img/christian-joudrey-90289-unsplash-min.jpg);
             }
             &--5 {
-               background-image: url(../img/neslihan-gunaydin-3493-unsplash.jpg);
+               background-image: url(../img/neslihan-gunaydin-3493-unsplash-min.jpg);
             }
             &--6 {
-               background-image: url(../img/christian-joudrey-90289-unsplash.jpg);
+               background-image: url(../img/christian-joudrey-90289-unsplash-min.jpg);
             }
             &--7 {
                background-image: url(../img/ozdoba.jpg);
