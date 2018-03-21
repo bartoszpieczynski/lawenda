@@ -354,83 +354,44 @@ body {
     padding-bottom: 3rem; }
 
 .gallery {
-  width: 80%;
-  height: auto;
+  width: 90%;
   margin: 0 auto;
-  padding: 20rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-  .gallery__top {
-    flex: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .gallery__top__img {
-      cursor: pointer;
-      width: 15rem;
-      height: 15rem;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
-      margin-bottom: 1rem; }
-  .gallery__bottom {
-    flex: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 1rem; }
-    .gallery__bottom__img {
-      cursor: pointer;
-      width: 15rem;
-      height: 15rem;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
-  .gallery__right-side {
-    flex: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .gallery__right-side__img {
-      cursor: pointer;
-      width: 15rem;
-      height: 15rem;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
-      .gallery__right-side__img:not(:last-child) {
-        margin-bottom: 1rem; }
-  .gallery__main {
-    flex: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .gallery__main__img {
-      cursor: pointer;
-      width: 60rem;
-      max-width: 100%;
-      max-height: 60rem;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
-  .gallery__left-side {
-    flex: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .gallery__left-side__img {
-      cursor: pointer;
-      width: 15rem;
-      height: 15rem;
-      border-radius: 10px;
-      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
-      .gallery__left-side__img:not(:last-child) {
-        margin-bottom: 1rem; }
+  position: relative; }
+  .gallery__arrows {
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    color: rgba(72, 46, 116, 0.8);
+    transition: all .3s;
+    cursor: pointer; }
+    .gallery__arrows--right {
+      transform: translate(120%, -50%);
+      right: 0; }
+      .gallery__arrows--right:hover {
+        transform: translate(130%, -50%); }
+      .gallery__arrows--right:active {
+        transform: translate(120%, -50%); }
+    .gallery__arrows--left {
+      transform: translate(-120%, -50%);
+      left: 0; }
+      .gallery__arrows--left:hover {
+        transform: translate(-130%, -50%); }
+        .gallery__arrows--left:hover:active {
+          transform: translate(-120%, -50%); }
+  .gallery__element {
+    margin: 5rem 2rem;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 5px; }
+    .gallery__element:hover {
+      box-shadow: 0 2rem 5rem rgba(72, 46, 116, 0.8);
+      transform: translateY(-1rem); }
+    .gallery__element:active, .gallery__element:focus {
+      outline: none; }
+    .gallery__element--img {
+      width: 100%;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5); }
 
 .products {
   width: 80%;
@@ -448,6 +409,7 @@ body {
     color: white;
     font-size: 1.4rem;
     padding-top: 10rem;
+    text-align: left;
     content: "";
     display: inline-block;
     background-image: linear-gradient(to right, #482e74, #9679c0);
@@ -458,6 +420,7 @@ body {
     flex: 0 0 20%;
     color: white;
     font-size: 1.4rem;
+    text-align: right;
     content: "";
     display: inline-block;
     background-image: linear-gradient(to right, #482e74, #9679c0);
@@ -568,13 +531,12 @@ body {
   padding-bottom: 15rem; }
 
 .section-gallery {
-  position: relative;
-  height: auto;
   background-image: linear-gradient(to right bottom, rgba(115, 75, 109, 0.8), rgba(66, 39, 90, 0.8)), url(../img/kaitlyn-chow-325348-unsplash-min.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
-  background-blend-mode: screen; }
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
 
 .section-contact {
   height: 95vh;

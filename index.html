@@ -6,19 +6,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link rel="icon" href="img/logo/logo-tab.png">
-      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
-            crossorigin="anonymous"></script>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/TweenMax.min.js"></script>
-
-
-      <script src="js/loading.js"></script>
-      <script src="js/smoothScrolling.js"></script>
-      <script src="js/navbar.js"></script>
-      <script src="js/galleryFade.js"></script>
-      <script src="js/petals.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto+Slab|Ubuntu" rel="stylesheet">
       <link rel="stylesheet" href="css/ionicons.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
       <link rel="stylesheet" href="css/style.css">
 
 
@@ -103,33 +94,15 @@
 
                   <section id="section-gallery" class="section-gallery">
                         <div class="gallery">
-                              <div class="gallery__top">
-                                    <img class="fade-img gallery__top__img" id="gal-img-1" src="img/ozdoba.jpg" alt="Main">
-                                    <img class="fade-img gallery__top__img" id="gal-img-2" src="img/gallery/gallery-1.jpg" alt="Main">
-                                    <img class="fade-img gallery__top__img" id="gal-img-4" src="img/gallery/gallery-2.jpg" alt="Main">
-                                    <img class="fade-img gallery__top__img" id="gal-img-5" src="img/gallery/gallery-1.jpg" alt="Main">
-                              </div>
-                              <div class="gallery__left-side">
-                                    <img class="fade-img gallery__left-side__img" id="gal-img-6" src="img/ozdoba.jpg" alt="Main">
-                                    <img class="fade-img gallery__left-side__img" id="gal-img-7" src="img/gallery/gallery-1.jpg" alt="Main">
-                                    <img class="fade-img gallery__left-side__img" id="gal-img-8" src="img/gallery/gallery-2.jpg" alt="Main">
-                                    <img class="fade-img gallery__left-side__img" id="gal-img-9" src="img/gallery/gallery-1.jpg" alt="Main">
-                              </div>
-                              <div class="gallery__main">
-                                    <img class="gallery__main__img" id="big-img" src="img/ozdoba.jpg" alt="Main">
-                              </div>
-                              <div class="gallery__right-side">
-                                    <img class="fade-img gallery__right-side__img" id="gal-img-10" src="img/neslihan-gunaydin-3493-unsplash-min.jpg" alt="Main">
-                                    <img class="fade-img gallery__right-side__img" id="gal-img-11" src="img/gallery/gallery-2.jpg" alt="Main">
-                                    <img class="fade-img gallery__right-side__img" id="gal-img-12" src="img/ozdoba.jpg" alt="Main">
-                                    <img class="fade-img gallery__right-side__img" id="gal-img-13" src="img/gallery/gallery-1.jpg" alt="Main">
-                              </div>
-                              <div class="gallery__bottom">
-                                    <img class="fade-img gallery__bottom__img" id="gal-img-14" src="img/ozdoba.jpg" alt="Main">
-                                    <img class="fade-img gallery__bottom__img" id="gal-img-15" src="img/gallery/gallery-1.jpg" alt="Main">
-                                    <img class="fade-img gallery__bottom__img" id="gal-img-17" src="img/gallery/gallery-2.jpg" alt="Main">
-                                    <img class="fade-img gallery__bottom__img" id="gal-img-18" src="img/gallery/gallery-1.jpg" alt="Main">
-                              </div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
+                              <div class="gallery__element"><img class="gallery__element--img" src="img/ozdoba.jpg" alt=""></div>
                         </div>
                   </section>
 
@@ -239,6 +212,57 @@
             </main>
 
       </div>
+
+
+
+
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+            crossorigin="anonymous"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/TweenMax.min.js"></script>
+
+
+      <script src="js/loading.js"></script>
+      <script src="js/smoothScrolling.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/petals.js"></script>
+      <script src="js/slick.js"></script>
+      <script>
+            $(document).ready(function () {
+                  $('.gallery').slick({
+                        centerMode: true,
+                        centerPadding: 0,
+                        autoplay: true,
+                        nextArrow: '<i class="gallery__arrows gallery__arrows--right ion-chevron-right"></i>',
+                        prevArrow: '<i class="gallery__arrows gallery__arrows--left ion-chevron-left"></i>',
+                        autoplaySpeed: 2000,
+                        slidesToShow: 5,
+                        speed: 1000,
+                        responsive: [
+                              {
+                                    breakpoint: 768,
+                                    settings: {
+                                          arrows: false,
+                                          centerMode: true,
+                                          centerPadding: '40px',
+                                          slidesToShow: 3
+                                    }
+                              },
+                              {
+                                    breakpoint: 480,
+                                    settings: {
+                                          arrows: false,
+                                          centerMode: true,
+                                          centerPadding: '40px',
+                                          slidesToShow: 1
+                                    }
+                              }
+                        ]
+                  });
+            });
+      </script>
+
+
 </body>
 
 </html>
