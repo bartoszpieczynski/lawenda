@@ -7,11 +7,14 @@
     "aos": "^2.2.0",
     "node-sass": "^4.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.2.0"
+  },
   "scripts": {
     "watch:sass": "node-sass scss/main.scss css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
+    "jscomp": "webpack",
     "compile:sass": "node-sass scss/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' style.concat.css -o css/style.prefix.css",
