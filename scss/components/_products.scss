@@ -2,30 +2,28 @@
   width: 80%;
   margin: 0 auto;
   height: 95%;
-  padding-top: 15rem;
-  padding-bottom: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   font-weight: 700;
 
-  &__text--up {
+  &__text {
     flex: 0 0 20%;
     color: white;
-    font-size: 1.4rem;
-    padding-top: 10rem;
-    text-align: left;
+    font-size: 1.6rem;
+    padding-top: 3rem;
     @include main-text-gradient;
   }
 
+  &__text--up {
+    text-align: left;
+  }
+
   &__text--down {
-    padding-top: 10rem;
-    flex: 0 0 20%;
-    color: white;
-    font-size: 1.4rem;
     text-align: right;
-    @include main-text-gradient;
   }
 
   &__card-box {
@@ -33,7 +31,6 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 308px;
     :nth-child(even) {
       margin-right: 1rem;
     }
@@ -41,12 +38,11 @@
 
   &__card {
     position: relative;
-    height: 12rem;
-    flex: 0 0 35%;
+    height: 16rem;
+    flex: 0 0 45%;
     margin-bottom: 2rem;
     transition: all 0.3s;
     text-align: center;
-    cursor: pointer;
 
     &__side {
       position: absolute;
@@ -157,10 +153,11 @@
     }
 
     &:hover &__side--back {
-      transform: rotateY(0) scale(1.2);
+      transform: rotateY(0) scale(1.1);
     }
 
     &--text {
+      font-size: 1.3rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -172,7 +169,7 @@
   }
   &__card-title {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     flex: 90%;
     text-align: center;
     padding-bottom: 1.5rem;

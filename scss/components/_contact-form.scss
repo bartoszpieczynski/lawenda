@@ -1,0 +1,73 @@
+.contact {  
+   padding: 3rem 5rem;
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   background-color: rgba(white, .8);
+   border-radius: 5px;
+   box-shadow: 1rem 2rem 4rem rgba(black, .6);
+   flex-wrap: wrap;
+
+   &__title {
+      flex: 100%;
+      padding-bottom: 2rem;
+   }
+
+   &__map {
+      flex: 30%;
+      width: 40rem;
+      height: 40rem;
+      border-radius: 10px;
+      box-shadow: 1rem 2rem 4rem rgba($color-primary-text-dark, .3);
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      flex: 40%;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      @include main-text-gradient;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      flex: 30%;
+      justify-content: center;
+
+      &__input {
+         flex: 100%;
+         width: 70%;      
+         font-family: inherit;   
+         line-height: 2.5rem;
+         border: none;
+         border-radius: 15px;
+         box-shadow: 1rem 2rem 4rem rgba($color-primary-text-dark, .3);
+         resize: none;
+         outline: none;
+         padding-left: 15px;
+         backface-visibility: hidden;
+         
+         &:not(:last-child) {
+            margin-bottom: 2.3rem;
+         }
+         &:focus {
+            border: .3rem solid $color-primary-text-dark;     
+         }
+         &:focus ~ & {
+            transform: translateY(-.6rem);
+         }
+         &:focus ~ &:not(:last-child) {
+
+         }
+      }
+   }
+
+
+}
+
