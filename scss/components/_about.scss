@@ -20,6 +20,7 @@
       box-shadow: 0 1rem 3rem rgba(black, .2);
       border-radius: 5px;
       transition: all .5s;
+      height: 100%;
 
       &:hover {
          box-shadow: 0 2rem 5rem rgba($color-primary-text-dark, .8); 
