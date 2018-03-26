@@ -616,6 +616,12 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .products {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .products__text {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 20%;
@@ -633,8 +639,15 @@ body {
     color: transparent; }
   .products__text--up {
     text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .products__text--up {
+        text-align: center;
+        margin-bottom: 3rem; } }
   .products__text--down {
     text-align: right; }
+    @media only screen and (max-width: 37.5em) {
+      .products__text--down {
+        text-align: center; } }
   .products__card-box {
     display: -webkit-box;
     display: -ms-flexbox;

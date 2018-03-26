@@ -10,6 +10,10 @@
   align-items: flex-start;
   font-weight: 700;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__text {
     flex: 0 0 20%;
     color: white;
@@ -20,10 +24,17 @@
 
   &__text--up {
     text-align: left;
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
   }
 
   &__text--down {
     text-align: right;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__card-box {
