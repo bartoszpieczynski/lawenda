@@ -1,4 +1,4 @@
-$( document ).ready(function(){
+
 var falling = true;
 
 TweenLite.set("#loader",{perspective:600})
@@ -20,4 +20,3 @@ var loader = document.getElementById("loader"),	w = window.innerWidth , h = wind
  };
 
 function R(min,max) {return min+Math.random()*(max-min)};
-});
