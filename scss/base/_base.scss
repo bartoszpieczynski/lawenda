@@ -63,8 +63,8 @@ body {
   height: 100%;
   background-image: linear-gradient(
     to right,
-    $color-primary-dark,
-    $color-primary-light
+    $color-primary-text-light,
+    $color-primary-text-dark
   );
   z-index: 50000;
   display: flex;

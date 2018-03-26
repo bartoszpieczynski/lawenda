@@ -1,12 +1,9 @@
+const path = require('path');
+
 module.exports = {
-  entry: "js/app.js",
+  entry: './js/home.js',
   output: {
-    path: `${__dirname}/js`,
-    filename: "bundle.js"
-  },
-  watch: true,
-  devtool: "source-map",
-  module: {
-    loaders: [{ test: /\.js$/, loader: "babel-loader" }]
+    path: path.resolve(__dirname, './js'),
+    filename: 'bundle.js'
   }
 };

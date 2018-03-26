@@ -1,0 +1,30 @@
+.footer {
+   background-color:  $color-primary-text-light;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3rem 0;
+   
+   &__logo {
+      flex: 20%;
+      display: flex;
+      justify-content: center;
+      &--img {
+         width: 20rem;
+         height: 10rem;
+      }
+   }
+   &__copyright {
+      text-align: center;
+      flex: 40%;
+      font-size: 1.5rem;
+      color: white;
+   }
+
+   &__created {
+      flex: 40%;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+   }
+}
