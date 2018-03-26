@@ -22,6 +22,35 @@
 
 <body>
 
+      <div class="mobile-nav">
+            <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="mobile-nav__btn">
+                  <span class="mobile-nav__icon">&nbsp;</span>
+            </label>
+
+            <div class="mobile-nav__background">&nbsp;</div>
+
+            <nav class="mobile-nav__nav">
+                  <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                              <a href="#section-about" class="mobile-nav__link">O nas</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                              <a href="#section-gallery" class="mobile-nav__link">Galeria</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                              <a href="#section-products" class="mobile-nav__link">Oferta</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                              <a href="#section-contact" class="mobile-nav__link">Kontakt</a>
+                        </li>
+                  </ul>
+            </nav>
+      </div>
+
+      <!-- Navbar after scroll -->
+
       <nav id="navbar-fixed" class="navbar-fixed not-mobile">
             <div class="navbar-fixed__container">
                   <a class="navbar__logo" href="#navbar">
@@ -39,6 +68,9 @@
                   <h2 class="heading-loader">Loading</h2>
             </div>
       </div> -->
+
+      <!-- Navbar before scroll -->
+
 
       <div class="social-bar not-mobile">
             <div class="social-bar__icon">
@@ -291,16 +323,21 @@
                               </div>
                               <div data-aos="fade-right" class="contact__info u-center-text">
                                     <div class="contact__info--adress">
-                                          <h3 class="heading-tertiary u-center-text u-margin-bottom-small contact__info--mail">Adres</h3><br>
-                                          <p class="contact__info--mail">Centrum Ogrodnicze Lawenda</p><br>
-                                          <p class="contact__info--mail">ul. Bukszpanowa 1 A, 70-763</p><br>
+                                          <h3 class="heading-tertiary u-center-text u-margin-bottom-small contact__info--mail">Adres</h3>
+                                          <br>
+                                          <p class="contact__info--mail">Centrum Ogrodnicze Lawenda</p>
+                                          <br>
+                                          <p class="contact__info--mail">ul. Bukszpanowa 1 A, 70-763</p>
+                                          <br>
                                           <p class="contact__info--mail">Szczecin, Prawobrzeże - Zdroje</p>
                                     </div>
                                     <div class="contact__info--tel">
-                                          <h3 class="heading-tertiary u-margin-top u-center-text u-margin-bottom-small contact__info--mail">Telefon</h3><br>
+                                          <h3 class="heading-tertiary u-margin-top u-center-text u-margin-bottom-small contact__info--mail">Telefon</h3>
+                                          <br>
                                           <p class="contact__info--mail">Sklep:
                                                 <a class="contact__info--mail" href="tel:+48664922341">664 922 341</a>
-                                          </p><br>
+                                          </p>
+                                          <br>
                                           <p class="contact__info--mail">Biuro:
                                                 <a class="contact__info--mail" href="tel:+48608524908">608 524 908</a>
                                           </p>
@@ -360,6 +397,7 @@
       <script src="js/lightboxOptions.js"></script>
       <script src="js/date.js"></script>
       <script src="js/aos.js"></script>
+      <script src="js/mobileNav.js"></script>
 
       <script>
             AOS.init();
