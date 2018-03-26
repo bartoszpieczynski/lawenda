@@ -840,6 +840,7 @@ body {
       -webkit-background-clip: text;
       color: transparent; }
     .contact__info--adress {
+      text-decoration: none;
       content: "";
       display: inline-block;
       background-image: -webkit-linear-gradient(left, #482e74, #9679c0);
@@ -847,6 +848,7 @@ body {
       -webkit-background-clip: text;
       color: transparent; }
     .contact__info--tel {
+      text-decoration: none;
       content: "";
       display: inline-block;
       background-image: -webkit-linear-gradient(left, #482e74, #9679c0);
