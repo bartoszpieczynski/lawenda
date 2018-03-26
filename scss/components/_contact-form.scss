@@ -3,8 +3,8 @@
    width: 80%;
    margin: 0 auto;
    display: flex;
-   justify-content: center;
-   align-items: flex-start;
+   justify-content: space-around;
+   align-items: center;
    background-color: rgba(white, .8);
    border-radius: 5px;
    box-shadow: 1rem 2rem 4rem rgba(black, .6);
@@ -20,7 +20,16 @@
       width: 40rem;
       height: 40rem;
       border-radius: 10px;
-      box-shadow: 1rem 2rem 4rem rgba($color-primary-text-dark, .3);
+      box-shadow: 1rem 2rem 4rem rgba($color-primary-text-dark, .3);     
+      
+      @include respond(tab-port) {
+         margin-top: 3rem;
+      }
+
+      @include respond(phone) {
+         flex: 100%;
+         margin-top: 5rem;
+      }
    }
 
    &__info {
@@ -37,6 +46,15 @@
          text-decoration: none;
          @include main-text-gradient;
       }
+
+      @include respond(tab-port) {
+         flex: 50%;
+      }
+
+      @include respond(phone) {
+         flex: 100%;
+         padding-bottom: 5rem;
+      }
       
    }
 
@@ -48,6 +66,17 @@
       align-items: center;
       position: relative;
 
+      @include respond(tab-port) {
+         flex: 50%;
+      }
+
+      @include respond(phone) {
+         flex: 100%;
+         display: inline-block;
+         text-align: center;
+         margin-bottom: 5rem;
+      }
+
       &__btn {
          border: none;
          background-color: $color-primary-text-dark;
@@ -58,17 +87,22 @@
          flex: 10%;
          position: absolute;
          bottom: -4rem;
-         right: 50%;
+         right: 53%;
          font-weight: 700;
          box-shadow: 0rem 2rem 4rem rgba($color-primary-text-dark, .6);
          transition: all .3s;
          outline: none;
 
+         @include respond(phone) {
+            right: 40%;
+           
+         }
+
          &:hover {
             transform: translateY(-6px);
          }
          &:active {
-            transform: translateY(-3px);
+            transform: translateY(6px);
             box-shadow: 0rem 2rem 4rem rgba($color-primary-text-dark, .8);
          }
       }
@@ -86,6 +120,11 @@
          padding-left: 15px;
          backface-visibility: hidden;
          
+
+         @include respond(phone) {
+            width: 100%;
+         }
+
          &:not(:last-child) {
             margin-bottom: 1.5rem;
          }
@@ -95,10 +134,9 @@
          &:focus ~ & {
             transform: translateY(-.6rem);
          }
-         &:focus ~ &:not(:last-child) {
-
-         }
       }
+
+
    }
 
 

@@ -16,12 +16,7 @@ $(document).ready(function() {
         {
           scrollTop: $(hash).offset().top - ((windowHeight / 2) - (elHeight / 2))
         },
-        800,
-        function() {
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          //  window.location.hash = hash;
-        }
-      );
+        800);
     } // End if
   });
 });

@@ -6,7 +6,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link rel="icon" href="img/logo/logo-tab.png">
-      <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto+Slab|Ubuntu" rel="stylesheet">
       <link rel="stylesheet" href="css/ionicons.css">
       <link rel="stylesheet" href="css/slick.css">
       <link rel="stylesheet" href="css/slick-theme.css">
@@ -19,27 +18,29 @@
 
       <title>Centrum ogrodnicze Lawenda</title>
 </head>
-<nav id="navbar-fixed" class="navbar-fixed">
-      <div class="navbar-fixed__container">
-            <a class="navbar__logo" href="#navbar">
-                  <img class="navbar__logo" src="img/logo/logo-nav.png" alt="Logo">
-            </a>
-            <a href="#section-about" class="navbar-fixed__option">O nas</a>
-            <a href="#section-gallery" class="navbar-fixed__option">Galeria</a>
-            <a href="#section-products" class="navbar-fixed__option">Oferta</a>
-            <a href="#section-contact" class="navbar-fixed__option">Kontakt</a>
-      </div>
-</nav>
+
 
 <body>
 
-      <div id="loader" class="loader-wrapper">
+      <nav id="navbar-fixed" class="navbar-fixed not-mobile">
+            <div class="navbar-fixed__container">
+                  <a class="navbar__logo" href="#navbar">
+                        <img class="navbar__logo" src="img/logo/logo-nav.png" alt="Logo">
+                  </a>
+                  <a href="#section-about" class="navbar-fixed__option">O nas</a>
+                  <a href="#section-gallery" class="navbar-fixed__option">Galeria</a>
+                  <a href="#section-products" class="navbar-fixed__option">Oferta</a>
+                  <a href="#section-contact" class="navbar-fixed__option">Kontakt</a>
+            </div>
+      </nav>
+
+      <!-- <div id="loader" class="loader-wrapper">
             <div class="loader-text">
                   <h2 class="heading-loader">Loading</h2>
             </div>
-      </div>
+      </div> -->
 
-      <div class="social-bar">
+      <div class="social-bar not-mobile">
             <div class="social-bar__icon">
                   <i class="ion-chevron-left social-bar__icon--arrow"></i>
             </div>
@@ -67,7 +68,7 @@
 
       <div class="container">
 
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="navbar not-mobile">
                   <div class="navbar__container">
                         <a class="navbar__logo" href="#navbar">
                               <img class="navbar__logo" src="img/logo/logo-nav.png" alt="Logo">
@@ -93,7 +94,7 @@
                               <h2 class="heading-secondary">O nas</h2>
                         </div>
                         <div class="about u-margin-top">
-                              <div data-aos="fade-right" class="wrapper">
+                              <div data-aos="fade-right" class="about__wrapper">
                                     <div class="about__desc">
                                           <div class="about__icon">
                                                 <i class="ion-ios-home"></i>
@@ -104,7 +105,7 @@
                                           </p>
                                     </div>
                               </div>
-                              <div data-aos="fade-up" class="wrapper">
+                              <div data-aos="fade-up" class="about__wrapper">
                                     <div class="about__desc">
                                           <div class="about__icon">
                                                 <i class="ion-ios-cart"></i>
@@ -116,7 +117,7 @@
                                     </div>
                               </div>
 
-                              <div data-aos="fade-left" class="wrapper">
+                              <div data-aos="fade-left" class="about__wrapper">
                                     <div class="about__desc">
                                           <div class="about__icon">
                                                 <i class="ion-ios-people"></i>
@@ -196,7 +197,7 @@
 
                               </div>
 
-                              <div data-aos="fade-up" class="products__card-box">
+                              <div data-aos="fade-up" class="products__card-box not-mobile">
                                     <span class="products__card-title">Oferta naszej firmy składa się między innymi z:</span>
 
                                     <div class="products__card">
@@ -325,7 +326,7 @@
                               </div>
 
 
-                              <div data-aos="fade-left" class="contact__map" id="map"></div>
+                              <div data-aos="fade-left" class="contact__map not-mobile" id="map"></div>
                         </div>
                   </section>
 
@@ -350,7 +351,7 @@
       <script src="js/loading.js"></script>
       <script src="js/lightbox.min.js"></script>
       <script src="js/smoothScrolling.js"></script>
-      <script src="js/navbar.js"></script>    
+      <script src="js/navbar.js"></script>
       <script src="js/slick.js"></script>
       <script src="js/initMap.js"></script>
       <script src="js/galleryOptions.js"></script>

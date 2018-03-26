@@ -31,4 +31,14 @@
    background-blend-mode: screen; 
    padding-top: 10rem;
    padding-bottom: 10rem;
+
+   @include respond(tab-port) {
+         padding-top: 15rem;
+         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+   }
+
+   @include respond(phone) {
+      padding-top: 20rem;
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+   }
 }
