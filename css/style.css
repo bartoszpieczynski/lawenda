@@ -100,7 +100,7 @@ body {
   border-radius: 12px;
   width: 95%;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .container {
       width: 100%;
       margin: 0;
@@ -874,7 +874,10 @@ body {
       .contact__form {
         -webkit-box-flex: 50%;
             -ms-flex: 50%;
-                flex: 50%; } }
+                flex: 50%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .contact__form {
         -webkit-box-flex: 100%;
@@ -904,6 +907,9 @@ body {
       -webkit-transition: all .3s;
       transition: all .3s;
       outline: none; }
+      @media only screen and (max-width: 56.25em) {
+        .contact__form__btn {
+          right: 45%; } }
       @media only screen and (max-width: 37.5em) {
         .contact__form__btn {
           right: 40%; } }
